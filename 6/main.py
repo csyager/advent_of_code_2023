@@ -4,11 +4,11 @@ with open('input.txt') as file:
     lines = [line.rstrip() for line in file]
 
 
-def quadratic_solutions( a, b, c): 
- 
+def quadratic_solutions( a, b, c):
+
     # calculating discriminant using formula
-    dis = b * b - 4 * a * c 
-    sqrt_val = sqrt(abs(dis)) 
+    dis = b * b - 4 * a * c
+    sqrt_val = sqrt(abs(dis))
 
     solution_1 = (-b + sqrt_val)/(2 * a)
     solution_2 = (-b - sqrt_val)/(2 * a)

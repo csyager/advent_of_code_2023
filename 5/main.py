@@ -6,7 +6,7 @@ class Range():
         self.source_start = source_start
         self.source_end = source_end
         self.destination_start = destination_start
-    
+
     def __str__(self):
         return f"start: {self.source_start}, end: {self.source_end}, destination start: {self.destination_start}"
 
@@ -20,7 +20,7 @@ class Range():
 class RangeDict():
     def __init__(self):
         self.ranges = []
-    
+
     def get(self, key):
         for r in self.ranges:
             if r.contains(key):
